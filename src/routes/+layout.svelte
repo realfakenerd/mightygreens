@@ -1,5 +1,5 @@
 <script>
-	import {Header} from '$lib/Header';
+	import {Header} from '$lib/components';
 	import '../app.css';
 </script>
 

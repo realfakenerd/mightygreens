@@ -1,9 +1,9 @@
 <script>
-	import Cta from "$lib/CTA.svelte";
+	import {CTA} from "$lib/components";
 
 </script>
 <svelte:head>
     <title>Mighty Greens</title>
 </svelte:head>
 
-<Cta />
+<CTA />
