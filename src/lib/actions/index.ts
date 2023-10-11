@@ -3,6 +3,7 @@ export function blur(node: HTMLElement) {
     img.style.transition = 'opacity 300ms ease-in-out'
     if (img.complete) {
         img.style.opacity = '1';
+        node.style.backgroundImage = '';
         node.classList.remove('animate-pulse')
     }
 }

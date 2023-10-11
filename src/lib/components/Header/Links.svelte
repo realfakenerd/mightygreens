@@ -18,7 +18,7 @@
 	}
 
 	ul {
-		@apply flex items-center gap-6 text-sm;
+		@apply flex items-center gap-6 text-label-large;
 	}
 
     a {

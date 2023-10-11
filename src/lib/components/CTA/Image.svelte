@@ -11,17 +11,17 @@
 	class="blur-load animate-pulse {$$props.class ?? ''}"
 	style:background-image={`url(${bg ?? ''})`}
 >
-	<img alt="Sopa shiitake" {src} {loading} />
+	<img alt="Sopa shiitake" class="{$$props.class ?? ''}" {src} {loading} />
 </figure>
 
 <style lang="postcss">
-	figure {
-		@apply h-40 rounded-lg;
+	figure, img {
+		@apply h-full rounded-lg;
 	}
 
 	img {
-		@apply h-40 rounded-lg w-full object-cover object-center;
-		aspect-ratio: 9 / 16;
+		@apply w-full object-cover object-center;
+		aspect-ratio: 1 / 1;
 	}
 
 	.blur-load {
@@ -31,19 +31,5 @@
 	.blur-load img {
 		opacity: 0;
 		will-change: opacity;
-	}
-
-	@media (min-width: 640px) {
-		img,
-		figure {
-			@apply h-56;
-		}
-	}
-
-	@media (min-width: 768px) {
-		img,
-		figure {
-			@apply h-full;
-		}
 	}
 </style>

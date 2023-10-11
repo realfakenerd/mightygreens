@@ -29,6 +29,6 @@
 	}
 
 	.saiba-mais a {
-		@apply rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white shadow;
+		@apply rounded-md bg-green-600 px-5 py-2.5 text-label-large font-medium text-white shadow;
 	}
 </style>

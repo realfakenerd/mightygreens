@@ -23,7 +23,7 @@
 
 			<aside class="image-aside">
 				<Image class="w-full" src="/shiitake_prato.webp" bg="/shiitake_prato_lowres.webp" />
-				<Image class="w-full" src="/cogumelo_na_arvore.webp" />
+				<Image class="w-full" src="/cogumelo_na_arvore.webp" bg="/cogumelo_na_arvore_lowres.webp" />
 			</aside>
 		</div>
 	</div>
@@ -43,11 +43,11 @@
 	}
 
 	.text-side h2 {
-		@apply text-2xl font-medium text-white;
+		@apply text-headline-small font-medium text-white;
 	}
 
 	.text-side p {
-		@apply hidden text-white/90;
+		@apply hidden text-white/90 text-body-large;
 	}
 
 	.text-action {
@@ -58,7 +58,7 @@
 		transition-duration: 300ms;
 		transition-property: color, background-color;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		@apply inline-block rounded-sm border border-white bg-white px-12 py-3 text-sm font-medium text-green-700;
+		@apply inline-block rounded-sm border border-white bg-white px-12 py-3 text-label-large text-green-700;
 	}
 
 	.text-action a:hover {
@@ -81,7 +81,7 @@
 
 	@media (min-width: 768px) {
 		.side-container {
-			@apply flex-row h-screen;
+			@apply flex-row min-h-[70dvh];
 		}
 
 		.text-side-container {
@@ -89,7 +89,7 @@
 		}
 
 		.text-side h2 {
-			@apply text-3xl;
+			@apply text-headline-large;
 		}
 
 		.text-action {
