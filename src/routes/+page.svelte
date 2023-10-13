@@ -24,9 +24,3 @@
         </ul>
     </div>
 </section>
-
-<style>
-    li {
-        list-style-image: url(marker.webp);
-    }
-</style>
