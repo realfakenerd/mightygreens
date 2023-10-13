@@ -26,7 +26,7 @@
 					href="#saiba-mais"
 					class="block w-full rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
 				>
-					Get Started
+                    Fale Conoco
 				</a>
 			</div>
 		</div>
@@ -43,8 +43,8 @@
 		bg="/cogumelos_selvagens_lowres.webp"
 	/>
 	<div class="flex flex-col justify-center items-center gap-4 w-full">
-		<h2 class="text-headline-medium">Por que ambiente controlado?</h2>
-		<ul class="text-display-small text-green-600">
+		<h2 class="text-title-large">Por que ambiente controlado?</h2>
+		<ul class="text-headline-small text-green-600">
 			<li>Produtos muito frescos</li>
 			<li>Localmente produzidos</li>
 			<li>Menos uso de água</li>
@@ -54,3 +54,9 @@
 		</ul>
 	</div>
 </section>
+
+<style>
+    li {
+        list-style-image: url(/marker.webp);
+    }
+</style>
