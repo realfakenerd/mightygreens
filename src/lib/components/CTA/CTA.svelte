@@ -22,8 +22,8 @@
 			</div>
 
 			<aside class="image-aside">
-				<Image class="w-full" src="/shiitake_prato.webp" bg="/shiitake_prato_lowres.webp" />
-				<Image class="w-full" src="/cogumelo_na_arvore.webp" bg="/cogumelo_na_arvore_lowres.webp" />
+				<Image class="w-full" src="/shiitake_no_prato.webp" loading="lazy" decoding="async" useSrcset/>
+				<Image class="w-full" src="/shiitakes_na_mesa.webp" loading="lazy" decoding="async" useSrcset/>
 			</aside>
 		</div>
 	</div>

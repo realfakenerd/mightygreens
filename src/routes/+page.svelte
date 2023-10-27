@@ -7,14 +7,18 @@
 	<title>Mighty Greens</title>
 </svelte:head>
 
-<section class="relative bg-[url(/shiitake_hero.jpg)] bg-cover bg-center bg-no-repeat min-h-screen">
+<section class="relative min-h-screen">
+	<img
+		class="absolute object-cover object-center h-full w-full inset-0 z-0"
+		src="/shiitake_hero.webp"
+		alt="sss"
+	/>
+
 	<div
 		class="absolute inset-0 bg-lime-100/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-lime-100/95 sm:to-lime-100/25"
 	/>
 
-	<div
-		class="relative mx-auto max-w-screen-xl px-4 sm:px-6 flex min-h-screen items-center lg:px-8"
-	>
+	<div class="relative mx-auto max-w-screen-xl px-4 sm:px-6 flex min-h-screen items-center lg:px-8">
 		<div class="max-w-xl">
 			<h1 class="text-display-large text-center sm:text-left">
 				Cultivando
@@ -26,7 +30,7 @@
 					href="#saiba-mais"
 					class="block w-full rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
 				>
-                    Fale Conoco
+					Fale Conoco
 				</a>
 			</div>
 		</div>
@@ -40,7 +44,8 @@
 	<Image
 		class="w-full max-h-screen-half"
 		src="/cogumelos_selvagens.webp"
-		bg="/cogumelos_selvagens_lowres.webp"
+		loading="lazy"
+		decoding="async"
 	/>
 	<div class="flex flex-col justify-center items-center gap-4 w-full">
 		<h2 class="text-title-large">Por que ambiente controlado?</h2>
@@ -56,7 +61,7 @@
 </section>
 
 <style>
-    li {
-        list-style-image: url(/marker.webp);
-    }
+	li {
+		list-style-image: url('/marker.webp');
+	}
 </style>
